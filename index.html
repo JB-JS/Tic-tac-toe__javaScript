@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-tac-toe 게임 자바스크립트로 구현하기</title>
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #cube {
+            margin: 200px 0;
+        }
+        #cube > div {
+            display: flex;
+            width: 420px;
+        }
+        #cube > div > div {
+            width: 140px;
+            height: 90px;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            font-size: 48px;
+            text-align: center;
+            line-height: 90px;
+        }
+
+        #result {
+            text-align: center;
+            line-height: 50px;
+            border: 1px solid #000;
+            width: 400px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="cube">
+        <div data-name="0">
+            <div class="box" data-location="0"></div>
+            <div class="box" data-location="1"></div>
+            <div class="box" data-location="2"></div>
+        </div>
+        <div data-name="1">
+            <div class="box" data-location="0"></div>
+            <div class="box" data-location="1"></div>
+            <div class="box" data-location="2"></div>
+        </div>
+        <div data-name="2">
+            <div class="box" data-location="0"></div>
+            <div class="box" data-location="1"></div>
+            <div class="box" data-location="2"></div>
+        </div>
+    </div>
+    <div id="result">결과: <span></span></div>
+    <script src="app.js"></script>
+</body>
+</html>
